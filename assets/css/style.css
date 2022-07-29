@@ -9,29 +9,38 @@
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    color: inherit;
+}
+
 body {
-    background: rgb(235, 240, 194) ;
+    background: #e4e4e4;
     display: grid;
     grid-template-areas:
-        "cabecalho",
-        "conteudo",
+        "cabecalho"
+        "conteudo"
         "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
 
 }
 
 .cabecalho {
-    background: crimson;
-    grid-area: "cabecalho";
+    grid-area: cabecalho;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .conteudo {
-    background: salmon;
-    grid-area: "conteudo";
+    grid-area: conteudo;
+    padding: 0 1.5rem;
 }
 
 .rodape {
-    background: cyan;
-    grid-area: "rodape";
+    grid-area: rodape;
+    background: #fdfdfd;
+    color: #333333;
+    padding: 1rem;
+    text-align: center;
 }

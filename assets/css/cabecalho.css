@@ -1,0 +1,27 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a{
+    position: relative;
+    padding: .6rem .8rem;
+    transition: background-color 400ms ease-in-out;
+}
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    background: #CE3FF5;
+    transition: all 180ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+    left: 0;
+}
